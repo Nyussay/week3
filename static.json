@@ -2,7 +2,7 @@
   "routes" : {
      "/login/" : "index.html",
      "/promise/" : "index1.html", 
-     "/fetch/" : "index3.html" 
+     "/fetch/" : "index2.html" 
   }, 
   "headers" : {
     "/**": {
