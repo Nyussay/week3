@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Week 3</title><meta charset="utf-8">
+ </head>
+ <body>
+   <div><input id="inp" type="text" size="40"></div><br>
+   <div><button id ="bt" onClick = "myFunction()">Click!</button></div>
+    <script>
+      function myFunction(){
+        let url = document.getElementById('inp').value;
+	              fetch(url)
+	                   .then((response) => response.text())
+                           .then((data) => {return  document.getElementById('inp').value = data});
+         // .then(res => res.text())
+        //  .then(document.getElementById('inp').value => res))
+      }
+		//let response = await fetch(url);
+       // document.getElementById('inp').value = "";
+	//	let text = await response.text(); 
+       // document.getElementById('inp').value = text;
+     // }
+      
+   </script>
+ </body>
+</html>
