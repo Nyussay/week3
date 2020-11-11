@@ -1,30 +1,13 @@
 {
-    "encoding": "UTF-8",
-    "headers": {
-      "/*": {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "text/html; charset=UTF-8",
-        "X-Author": "itmo286138"
-      },
-      "/sample/*": {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "text/plain; charset=UTF-8",
-        "X-Author": "itmo286138"
-      },
-      "/login/*": {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "text/plain; charset=UTF-8",
-        "X-Author": "itmo286138"
-      },
-      "/promise/*": {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "text/plain; charset=UTF-8",
-        "X-Author": "itmo286138"
-      }     
-        ,
-      "/fetch/*": {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "text/html; charset=UTF-8",
-        "X-Author": "itmo286138"
-      } 
-    }  
+  "routes" : {
+     "/login/" : "index.html",
+     "/promise/" : "index1.html", 
+     "/fetch/" : "index3.html" 
+  }, 
+  "headers" : {
+    "/**": {
+      "Content-Type": "text/plain;charset=UTF-8", 
+      "Access-Control-Allow-Origin" : "*"
+    }    
+  } 
+}
